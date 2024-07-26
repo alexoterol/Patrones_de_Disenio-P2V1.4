@@ -12,5 +12,10 @@ public class VerificarGarantia extends HandlerBase{
     @Override
     public void handle() {
         System.out.println("Código Verificar garantía");
+        if (false){
+            //en caso de que el producto no tenga garantía
+        }else{
+            next.handle();
+        }
     }
 }

@@ -12,5 +12,6 @@ public class AprobacionGerente extends HandlerBase{
     @Override
     public void handle() {
         System.out.println("Código para la confirmación del gerente");
+        System.out.println("Fin de los handlers");
     }
 }

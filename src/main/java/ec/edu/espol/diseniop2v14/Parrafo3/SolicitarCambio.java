@@ -12,6 +12,10 @@ public class SolicitarCambio extends HandlerBase{
     @Override
     public void handle() {
         System.out.println("Código de Solicitar Cambio");
-
+        if (false){
+            //en caso de no poder solicitar Cambio
+        }else{
+            next.handle();
+        }
     }
 }

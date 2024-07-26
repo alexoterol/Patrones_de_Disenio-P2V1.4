@@ -9,7 +9,7 @@ package ec.edu.espol.diseniop2v14.Parrafo3;
  * @author alexo
  */
 public class HandlerBase implements Handler{
-    private Handler next;
+    Handler next;
     
     @Override
     public void handle() {

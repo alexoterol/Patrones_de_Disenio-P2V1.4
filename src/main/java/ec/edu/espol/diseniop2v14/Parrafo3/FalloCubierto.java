@@ -9,9 +9,13 @@ package ec.edu.espol.diseniop2v14.Parrafo3;
  * @author alexo
  */
 public class FalloCubierto extends HandlerBase{
-    private Handler next;
     @Override
     public void handle() {
         System.out.println("Código de fallo cubierto");
+        if (false){
+            //en caso de que el fallo no esté cubierto
+        }else{
+            next.handle();
+        }
     }
 }

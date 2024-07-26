@@ -12,5 +12,10 @@ public class CertificarExistencia extends HandlerBase{
     @Override
     public void handle() {
         System.out.println("Código para certificar existencia del producto en bodega");
+        if (false){
+            //en caso de no poder certificar existencia
+        }else{
+            next.handle();
+        }
     }
 }
