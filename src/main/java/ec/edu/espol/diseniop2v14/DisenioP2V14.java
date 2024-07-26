@@ -25,16 +25,20 @@ public class DisenioP2V14 {
         User user = new User();
         //Primer Párrafo
         
-        Producto p1 = new Producto("Lapiz", "Papeleria");
-        Producto p2 = new Producto("Monitor", "Tecnologia");
+        Producto p1 = new Producto("Lapiz", "Papeleria", 5.7);
+        Producto p2 = new Producto("Monitor", "Tecnologia",4.5);
         
-        ColeccionProductos col1 = new ColeccionProductos(new ArrayList<Producto>());
-        ColeccionProductos col2 = new ColeccionProductos(new ArrayList<Producto>());
+        ColeccionProductos col1 = new ColeccionProductos();
+        ColeccionProductos col2 = new ColeccionProductos();
         
         col1.addProducto(p1);
         col2.addProducto(p2);
         
-        //col1.createProductosDisponibles();
+        col1.createProductosDisponibles();
+        col2.createProductosFalla();
+        
+        System.out.println("Productos Disponibles: "+col1.getProductos());
+        System.out.println("Productos con falla: "+col2.getProductos());
         
         //Segundo Párrafo
         

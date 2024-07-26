@@ -11,15 +11,14 @@ package Parrafo1;
 public class Producto {
     private String nombre;
     private String categoria;
-    private String status;
-    private String periodoGarantia;
+    private double precio;
 
-    public Producto(String nombre, String categoria) {
+    public Producto(String nombre, String categoria, double precio) {
         this.nombre = nombre;
         this.categoria = categoria;
+        this.precio = precio;
     }
-        
-    
+
     // Getters y Setters
     
     public String getNombre() {
@@ -37,21 +36,18 @@ public class Producto {
     public void setCategoria(String categoria) {
         this.categoria = categoria;
     }
-
-    public String getStatus() {
-        return status;
+    
+    /*
+    
+    public ProductoIterator iterador() {
+        return new ProductoIterator();
     }
 
-    public void setStatus(String status) {
-        this.status = status;
-    }
+    */
 
-    public String getPeriodoGarantia() {
-        return periodoGarantia;
-    }
-
-    public void setPeriodoGarantia(String periodoGarantia) {
-        this.periodoGarantia = periodoGarantia;
+    @Override
+    public String toString() {
+        return nombre +":$" + precio;
     }
     
     

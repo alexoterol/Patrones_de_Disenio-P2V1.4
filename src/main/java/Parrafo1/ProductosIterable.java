@@ -11,8 +11,8 @@ import java.util.ArrayList;
  * @author jaren
  */
 public interface ProductosIterable {
-    public Iterator createProductosDisponibles(ArrayList<Producto> p);
-    public Iterator createProductosVendedor(ArrayList<Producto> p);
-    public Iterator createProductosFalla(ArrayList<Producto> p);
-    public Iterator createProductosReparacion(ArrayList<Producto> p);
+    public Iterator createProductosDisponibles();
+    public Iterator createProductosVendedor(String tienda);
+    public Iterator createProductosFalla();
+    public Iterator createProductosReparacion();
 }

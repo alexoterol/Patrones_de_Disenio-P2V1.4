@@ -14,42 +14,36 @@ import java.util.List;
 public class ColeccionProductos implements ProductosIterable{
     private List<Producto> productos;
 
-    public ColeccionProductos(List<Producto> productos) {
-        this.productos = productos;
+    public ColeccionProductos() {
+        this.productos = new ArrayList<>();
+    }
+
+    public void addProducto(Producto p) {
+        this.productos.add(p);
     }
 
     public List<Producto> getProductos() {
         return productos;
     }
 
-    public void setProductos(List<Producto> productos) {
-        this.productos = productos;
-    }
-    
-    // Metodos
-    
-    public void addProducto(Producto p) {
-        this.productos.add(p);
+    @Override
+    public Iterator createProductosDisponibles() {
+        return new ProductoIterator(new ArrayList<>());
     }
 
     @Override
-    public Iterator createProductosDisponibles(ArrayList<Producto> p) {
-        return new ProductoIterator(p);
+    public Iterator createProductosVendedor(String tienda) {
+        return new ProductoIterator(new ArrayList<>());
     }
 
     @Override
-    public Iterator createProductosVendedor(ArrayList<Producto> p) {
-        return new ProductoIterator(p);
+    public Iterator createProductosFalla() {
+        return new ProductoIterator(new ArrayList<>());
     }
 
     @Override
-    public Iterator createProductosFalla(ArrayList<Producto> p) {
-        return new ProductoIterator(p);
-    }
-
-    @Override
-    public Iterator createProductosReparacion(ArrayList<Producto> p) {
-        return new ProductoIterator(p);
-    }    
+    public Iterator createProductosReparacion() {
+       return new ProductoIterator(new ArrayList<>());
+    }   
     
 }
