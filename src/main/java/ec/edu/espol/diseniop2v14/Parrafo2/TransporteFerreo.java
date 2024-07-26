@@ -8,6 +8,16 @@ package ec.edu.espol.diseniop2v14.Parrafo2;
  *
  * @author alexo
  */
-public class TransporteFerreo {
+public class TransporteFerreo implements Strategy{
+
+    @Override
+    public void deliver() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void doSomething() {
+        System.out.println("Distribuir ferreo");
+    }
     
 }

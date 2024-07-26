@@ -12,10 +12,10 @@ public class ContextoTransporte {
     private Strategy strategy;
     
     public void setStrategy(Strategy str){
-        
+        this.strategy = str;
     }
     public void doSomething(){
-        
+        strategy.doSomething();
     }
     
 }
