@@ -4,13 +4,13 @@
 
 package ec.edu.espol.diseniop2v14;
 
+import ec.edu.espol.diseniop2v14.Parrafo1.ColeccionProductos;
+import ec.edu.espol.diseniop2v14.Parrafo1.Producto;
 import ec.edu.espol.diseniop2v14.Parrafo2.ContextoTransporte;
 import ec.edu.espol.diseniop2v14.Parrafo2.Strategy;
 import ec.edu.espol.diseniop2v14.Parrafo2.TransporteAereo;
 import ec.edu.espol.diseniop2v14.Parrafo2.TransporteBici;
 import ec.edu.espol.diseniop2v14.Parrafo2.TransporteCarro;
-import Parrafo1.ColeccionProductos;
-import Parrafo1.Producto;
 import ec.edu.espol.diseniop2v14.Parrafo2.TransporteFluvial;
 import ec.edu.espol.diseniop2v14.Parrafo3.AprobacionGerente;
 import ec.edu.espol.diseniop2v14.Parrafo3.CertificarExistencia;
